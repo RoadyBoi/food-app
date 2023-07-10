@@ -1,73 +1,9 @@
-import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, Button, SafeAreaView, ScrollView, Image} from 'react-native';
 import {NavigationContainer} from '@react-navigation/native';
 import {createStackNavigator} from '@react-navigation/stack';
 import {Cell, Section, TableView} from 'react-native-tableview-simple';
 
 const Stack = createStackNavigator();
-
-// function HomeScreen({navigation}){
-//   return(
-//     <View style={styles.container}>
-//       <Text> Home Screen !</Text>
-//       <Button 
-//         title = "Details"
-//         onPress={()=>navigation.navigate("Details")}
-//       />
-//     </View>
-//   )
-// }
-
-// function DetailsScreen(){
-//   return(
-//     <View style={styles.container}>
-//       <Text> Details Screen !</Text>
-//     </View>
-//   )
-// }
-
-// export default function App() {
-//   let tableData = [{"header":"Section 1","cells":[{"title":"Cell 1"}, {"title":"Cell 2"}]},
-//   {"header":"Section 2","cells":[{"title":"Cell 1"}]}]
-
-//   const CustomCell = (props) => (
-//     <Cell
-//       {...props}
-//       cellContentView={
-//         <View>
-//           <Text>{props.customLabel}</Text>
-//         </View>
-//       }
-//     />
-//   )
-//   return (
-//   //  <NavigationContainer>
-//   //   <Stack.Navigator>
-//   //     <Stack.Screen name = "Home" component = {HomeScreen} options={{headerTitleAlign:'center'}}/>
-//   //     <Stack.Screen name = "Details" component = {DetailsScreen} options={{headerTitleAlign:'center'}}/>
-//   //   </Stack.Navigator>
-//   //  </NavigationContainer>
-//     <SafeAreaView>
-//       <ScrollView style={{height:"100%"}}>
-//         <TableView>
-//            {tableData.map((section,i)=>(
-//            <Section
-//               header={section.header}
-//            >
-//             {section.cells.map((cell, i)=>(
-//               <CustomCell
-//                 customLabel={cell.title}
-//                 onPress={() => alert(section.header)}
-//               />
-//             ))}
-//            </Section>
-//            ))}
-//         </TableView>
-//       </ScrollView>
-//     </SafeAreaView>
-
-//   );
-// }
 
 function HomeScreenCell(props) {
   const { title, tagline, time, img, action } = props;
