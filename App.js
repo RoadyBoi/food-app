@@ -194,10 +194,8 @@ function MenuScreen({route,navigation}){
           <SafeAreaView style={{paddingTop: 10}}>
             <Image source={props.image} style={styles.image} />
             <View style={styles.menuText}>
-            <View style={{flexDirection:'row', justifyContent:"space-between"}}>
               <Text style={styles.DescriptionTitle}>{props.title}</Text>
                 <Text style={styles.DescriptionCalories}>Calories: {props.calories}</Text>
-                </View>
                  <Text style={styles.Description}>{props.description}</Text>
                  <TextInput
                  style={styles.descriptionreview}
@@ -335,7 +333,6 @@ const styles = StyleSheet.create({
     padding:5,
     borderRadius:40,
     fontSize:15,
-    color:'white',
     borderWidth:3,
     borderColor:'#D70F64',
     width: 200,
